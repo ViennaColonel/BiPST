@@ -1,0 +1,31 @@
+{
+  "splits": {
+    "train": [
+      "sample01",
+      "sample02",
+      "sample03",
+      "sample04",
+      "sample05",
+      "sample06"
+    ],
+    "val": [
+      "sample07"
+    ],
+    "test": [],
+    "train_hidden_gt": []
+  },
+  "folds": [
+    [
+      "sample01",
+      "sample02"
+    ],
+    [
+      "sample03",
+      "sample04"
+    ],
+    [
+      "sample05",
+      "sample06"
+    ]
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "base_dir": "..",
+  "device": "cuda",
+  "seeds": [
+    3407,
+    3408,
+    3409
+  ],
+  "paths": {
+    "images": "data/images",
+    "validation_masks": "data/val_masks",
+    "reference_masks": "data/all_gt",
+    "splits": "configs/splits.local.json",
+    "output": "runs/custom",
+    "sam_weights": "pretrained/sam_vit_h_4b8939.pth",
+    "encoder_weights": "pretrained/mobilenet_v3_small.pth",
+    "samrefiner_repository": "third_party/SAMRefiner"
+  },
+  "training": {
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 2,
+    "first_epochs": 100,
+    "first_patience": 10,
+    "later_epochs": 20,
+    "auxiliary_epochs": 40,
+    "auxiliary_patience": 8,
+    "views_per_image": 2,
+    "auxiliary_view_floor": 56,
+    "crop_size": 384,
+    "crop_scale": [
+      0.8,
+      1.2
+    ],
+    "brightness_scale": [
+      0.8,
+      1.2
+    ],
+    "brightness_shift": [
+      -10.0,
+      10.0
+    ],
+    "flip_probability": 0.5,
+    "bce_weight": 1.0,
+    "dice_weight": 1.0,
+    "threshold": 0.5,
+    "num_workers": 0,
+    "torch_threads": 4,
+    "opencv_threads": 2,
+    "mixed_precision": true
+  },
+  "hashes": {
+    "sam_weights": "a7bf3b02f3ebf1267aba913ff637d9a2d5c33d3173bb679e46d9f338c26f262e",
+    "encoder_weights": "047dcff4addef86ea5bc2eff13c9614dc11f47ab1160d0a71a25e7db994f4e1f"
+  },
+  "image_hashes": {},
+  "samrefiner_source_sha256": {
+    "utils.py": "1ed420d5150fb238e84617702c560ff5e8d916e46eabb253623464863837ed2c",
+    "sam_refiner.py": "d01b26d66373775ccb2c5835c1e0cac9dc0071cd6a46aaa5fa7df01010e4e31d",
+    "sem2ins_mask.py": "bee515a99c04196d7a30a8238a10bf6c9264e01753eadd48728854eee04eca34",
+    "segment-anything/segment_anything/modeling/sam.py": "40e324a0ca17974d74fd19eed770ba018eacc0a2f2d3155ea0bd0bc5726c07b0"
+  }
+}

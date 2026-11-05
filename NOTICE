@@ -1,0 +1,9 @@
+BiPST: Prompt-Feedback Distillation for Shot-Peening Segmentation
+Copyright 2026 BiPST contributors.
+
+This distribution includes Segment Anything source by Meta Platforms, Inc. and
+affiliates. Its source notices and Apache-2.0 license are retained.
+See THIRD_PARTY_NOTICES.md for separately installed components.
+
+One author-authorized original image is included for the inference demo.
+The remaining research image dataset and all manual annotations are not distributed.

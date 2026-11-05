@@ -1,0 +1,86 @@
+{
+  "splits": {
+    "train": [
+      "A07",
+      "A08",
+      "A09",
+      "A10",
+      "A11",
+      "OLD_Image",
+      "OLD_Image12",
+      "OLD_Image13",
+      "OLD_Image15",
+      "OLD_Image16",
+      "OLD_Image17",
+      "OLD_Image18",
+      "OLD_Image19",
+      "OLD_Image20",
+      "OLD_Image21",
+      "OLD_Image22",
+      "U23",
+      "U25",
+      "U27",
+      "U28",
+      "U29",
+      "U30",
+      "U32",
+      "U33",
+      "U36",
+      "U37",
+      "U39"
+    ],
+    "train_hidden_gt": [
+      "A07",
+      "A08",
+      "A09",
+      "A10",
+      "A11"
+    ],
+    "val": [
+      "A12",
+      "A13",
+      "A21"
+    ],
+    "test": [
+      "A01",
+      "A06",
+      "A14",
+      "A15"
+    ]
+  },
+  "folds": [
+    [
+      "OLD_Image15",
+      "OLD_Image16",
+      "OLD_Image12",
+      "OLD_Image13",
+      "U30",
+      "A07",
+      "U29",
+      "U37",
+      "U28",
+      "U23"
+    ],
+    [
+      "OLD_Image17",
+      "OLD_Image18",
+      "OLD_Image21",
+      "OLD_Image22",
+      "A11",
+      "U32",
+      "U27",
+      "U36",
+      "A08"
+    ],
+    [
+      "OLD_Image19",
+      "OLD_Image20",
+      "U33",
+      "A09",
+      "U25",
+      "A10",
+      "U39",
+      "OLD_Image"
+    ]
+  ]
+}
